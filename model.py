@@ -10,5 +10,6 @@ class Model(nn.Module):
 
     def forward(self, features):
         z = self.w1 * features[0] + self.w2 * features[2] + self.w3 * features[1]
-        return z
+        score = (z / 100) 
+        return score
     

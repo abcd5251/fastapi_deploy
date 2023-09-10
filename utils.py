@@ -3,15 +3,12 @@ import os
 from model import Model
 import random
 
-from dotenv import load_dotenv
-load_dotenv()
-
 def get_twitter_score(user_name:str):
     # API keyws that yous saved earlier
-    api_key = os.getenv("API_KEY")
-    api_secrets = os.getenv("API_SECRET")
-    access_token = os.getenv("ACCESS_TOKEN_KEY")
-    access_secret = os.getenv("ACCESS_TOKEN_SCECRET")
+    api_key = "jBpkrsDFCNYdYPz1EzCR59N59"
+    api_secrets = "4sGV4EdhZNHhS1ENXqgorAOu1JRe0CvNt78qyhoMaNYhr2eZ0l"
+    access_token = "1698365178906386432-HoQ1grkcr5vSGqNpmbZsvCQbRNS1h6"
+    access_secret = "7Ihxy9DFgf2nJSrpiGkyS1zWk3ebcJ7x95lpeVu2BeDJt"
 
     # Authenticate to Twitter
     auth = tweepy.OAuthHandler(api_key,api_secrets)

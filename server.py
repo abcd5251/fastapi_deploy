@@ -25,7 +25,7 @@ class score_respond(BaseModel):
 class proof_respond(BaseModel):
     rank : str
 
-@app.post("/score_respond/")
+@app.post("/score_respond")
 async def score_respond(item: score_respond):
     features = get_twitter_score(item.user_name)
     print(features)
@@ -33,7 +33,7 @@ async def score_respond(item: score_respond):
     print(respond)
     return {"code":0, "data":respond}
 
-@app.post("/proof_respond/")
+@app.post("/proof_respond")
 async def proof_respond(item: proof_respond):
     proof = get_rank_proof(int(item.rank))
     print(proof)

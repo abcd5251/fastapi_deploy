@@ -1,8 +1,5 @@
-import torch.nn as nn
-import torch.nn.functional as F
 
-
-class Model(nn.Module):
+class Model():
     def __init__(self, inplace=False):
         self.w1 = 0.3
         self.w2 = 0.3

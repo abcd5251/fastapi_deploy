@@ -7,7 +7,6 @@ from pydantic import BaseModel
 
 import uvicorn
 
-import pandas as pd 
 
 app = FastAPI()
 

@@ -32,7 +32,7 @@ def generate_proof(features : list):
 
     model = Model()
     score = model.forward(features)
-    score_ranges = [(6, 10, (100, 300)),
+    score_ranges = [(0, 10, (100, 300)),
                     (10, 20, (300, 500)),
                     (20, 100, (500, 1300)),
                     (100, 1000000000, (1300, 5000))]
